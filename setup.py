@@ -7,7 +7,7 @@ readme_path = this_dir / "README.md"
 
 setup(
     name="pinequiz",
-    version="1.0.4",
+    version="1.0.5",
     author="openpineaplehub",
     author_email="openpineaple@gmail.com",
     description="🍍 PineQuiz CLI - Jalankan kuis terenkripsi dari GitHub",

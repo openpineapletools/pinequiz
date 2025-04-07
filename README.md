@@ -7,23 +7,17 @@
 
 ## 🚀 Instalasi
 
-### 1. Clone & Install Lokal
-
-```bash
-git clone https://github.com/openpineapletools/pinequiz.git
-cd pinequiz
-pip install .
 ```
-
-### 2. Jalankan CLI dari manapun:
-
-```bash
-pinequiz -h
+pip install pinequiz
 ```
-
----
 
 ## ⚙️ Fitur Utama
+
+>comamnd
+
+```
+pinequiz <-arghs> <-flag>
+```
 
 | Perintah | Deskripsi |
 |----------|-----------|
