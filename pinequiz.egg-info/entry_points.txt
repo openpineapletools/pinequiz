@@ -1,2 +1,0 @@
-[console_scripts]
-pinequiz = pinequiz.pinequiz:main
