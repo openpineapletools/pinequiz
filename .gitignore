@@ -1,0 +1,37 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# Caches
+*.log
+.cache/
+.soal_cache/
+
+# VSCode / IDE
+.vscode/
+.idea/
+
+# Env & dependency folders
+.env
+.venv
+env/
+venv/
+ENV/
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+
+# Installer-generated files
+pip-wheel-metadata/
+
+# Test file sementara
+test.py

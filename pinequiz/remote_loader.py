@@ -1,6 +1,6 @@
 import requests
 import os
-from config_manager import get_config
+from .config_manager import get_config
 
 def download_ps_file(link):
     if not link.endswith('.ps'):

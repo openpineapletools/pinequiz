@@ -1,5 +1,5 @@
 import json
-from crypto_util import xor_decrypt_with_salt
+from .crypto_util import xor_decrypt_with_salt
 
 def run_quiz(file_path):
     with open(file_path, 'r') as f:
