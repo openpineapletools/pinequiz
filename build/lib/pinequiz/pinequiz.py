@@ -1,8 +1,9 @@
 import argparse
-from .remote_loader import download_ps_file
-from .config_manager import save_token, get_config
-from .quiz_engine import run_quiz
+from remote_loader import download_ps_file
+from config_manager import save_token, get_config
+from quiz_engine import run_quiz
 import os
+
 def main():
     parser = argparse.ArgumentParser(
     description="🍍 PineQuiz CLI - Latihan Soal Encrypted",

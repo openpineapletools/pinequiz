@@ -1,27 +1,21 @@
 from setuptools import setup, find_packages
 from pathlib import Path
 
-# Baca README.md dengan aman
+# Direktori proyek
 this_dir = Path(__file__).parent
 readme_path = this_dir / "README.md"
 
-# Pastikan file README.md benar-benar ada
-if readme_path.exists():
-    long_description = readme_path.read_text(encoding="utf-8")
-else:
-    long_description = "🍍 PineQuiz CLI - Jalankan kuis terenkripsi dari GitHub."
-
 setup(
     name="pinequiz",
-    version="1.0.0",
+    version="1.0.2",
     author="openpineaplehub",
     author_email="openpineaple@gmail.com",
     description="🍍 PineQuiz CLI - Jalankan kuis terenkripsi dari GitHub",
-    long_description=long_description,
+    long_description=readme_path.read_text(encoding="utf-8") if readme_path.exists() else "🍍 PineQuiz CLI - Jalankan kuis terenkripsi dari GitHub.",
     long_description_content_type="text/markdown",
     url="https://github.com/openpineapletools/pinequiz",
     packages=find_packages(),
-    include_package_data=True,  # Penting untuk menyertakan file non-Python (jika ada)
+    include_package_data=True,
     entry_points={
         "console_scripts": [
             "pinequiz = pinequiz.pinequiz:main",
@@ -45,4 +39,6 @@ setup(
         "Source": "https://github.com/openpineapletools/pinequiz",
         "Bug Tracker": "https://github.com/openpineapletools/pinequiz/issues",
     },
+    license="MIT",
+    zip_safe=False,
 )
